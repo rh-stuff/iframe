@@ -1,0 +1,231 @@
+<div id="container">
+                    <div id="wrap">
+        <div id="main-body" class="onecolumn home-page">
+	<div id="content" class="group">
+		<div class="group-abc">
+		
+		<div id="promo-rhbc417012" class="promo-display " style="">
+							<script type="text/javascript">
+     
+$(document).ready(function() {
+
+    $( '#rhbc417012' ).cycle({    
+        fx: 'fade',
+        paused: false,
+        timeout: 4 * 1000,
+        speed:  9 * 100,
+        rev:    0, 
+        continueAuto:true,
+        swipe:true,
+        log:false
+    });
+
+    $( '#rhbc417012' ).on( 'cycle-before', function( event, opts ) {
+        $(".slide-show .prev").fadeIn("slow");
+    });
+
+    $( '#rhbc417012' ).on( 'cycle-after', function() {
+        // shouldLoadNewContent();
+    });
+
+});
+
+function shouldLoadNewContent(){
+    var slideIndex = 0,
+    totalSlides = 0,
+    remainingToCurrentEnd = 0,
+    fAdditionalSlidesAvailable = true,
+    loadSize = 50;
+
+    if(!fAdditionalSlidesAvailable){ return; };
+ 
+    API = $( '#rhbc417012' ).data( 'cycle.API' );
+    
+    totalSlides = API.getSlideIndex();
+
+    slideIndex = $('#rhbc417012').data("cycle.opts").currSlide + 1;
+
+    if(totalSlides == slideIndex){
+        fAdditionalSlidesAvailable = false;
+        return;
+    }
+
+    remainingToCurrentEnd = totalSlides - slideIndex;
+    
+    if((remainingToCurrentEnd < loadSize) && ((remainingToCurrentEnd % loadSize) < 2)) {
+        getSlideShowData("rhbc417012", totalSlides + 1 , loadSize);
+    }
+}
+
+function getSlideShowData(promotionId, startPos, length){
+    var slideShowDataUrl = '/sitewide/data/json/slide-show-data.jsp?promotionId=' + promotionId
+            + '&start=' + startPos
+            + '&length=' + length;
+    $.ajax({
+        type: "GET",
+        url: slideShowDataUrl,
+        dataType: "html",
+        success: function (data) {
+            $('#rhbc417012').cycle('add', $(data));
+        }
+    });
+}
+</script>
+ 
+    <div class="slide-show"> 
+                <div data-cycle-slides=">article" id="rhbc417012" style="position: relative;"><article class="cycle-slide cycle-sentinel" style="position: static; top: 0px; left: 0px; z-index: 100; opacity: 1; display: block; visibility: hidden;">
+                <img src="https://media.rhbabyandchild.com/is/image/rhbcis/020817_bc_hp_slide1?wid=1000&amp;fmt=jpeg&amp;qlt=90,0&amp;op_sharpen=0&amp;resMode=sharp&amp;op_usm=0.8,0.8,8,0&amp;iccEmbed=1" alt="spring furnishings sale" usemap="#rhbc417015" style="visibility: hidden;">
+	<map style="visibility: hidden;">
+
+		<area alt="shop storage" coords="641,566,723,584" href="/catalog/category/collections.jsp?link=shopstorage&amp;categoryId=rhbc_cat431004" style="visibility: hidden;">
+									<area alt="shop drapery" coords="451,566,529,584" href="/catalog/category/products.jsp?link=shopdrapery&amp;categoryId=rhbc_cat428032" style="visibility: hidden;">
+									<area alt="shop decor" coords="552,566,619,584" href="/catalog/category/products.jsp?link=shopdecor&amp;categoryId=rhbc_cat428028" style="visibility: hidden;">
+									<area alt="shop bath" coords="368,566,426,584" href="/catalog/category/products.jsp?link=shopbath&amp;categoryId=rhbc_cat428033" style="visibility: hidden;">
+									<area alt="RH members program" coords="285,341,711,396" href="/membership.jsp?link=RHmembersprogram" style="visibility: hidden;">
+									<area alt="shop bedding" coords="267,566,348,584" href="/catalog/category/products.jsp?link=shopbedding&amp;categoryId=rhbc_cat428027" style="visibility: hidden;">
+									</map>
+</article>
+                    <div class="cycle-prev prev" style="z-index: 101;"><a title="Previous" href="#"><span>Previous</span></a></div>
+                    <div class="cycle-next next" style="z-index:101"><a title="Next" href="#"><span>Next</span></a></div>
+
+            
+            
+            
+            
+            
+            
+        <article class="cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 94; opacity: 0; display: block; visibility: hidden;">
+                <img src="https://media.rhbabyandchild.com/is/image/rhbcis/020817_bc_hp_slide1?wid=1000&amp;fmt=jpeg&amp;qlt=90,0&amp;op_sharpen=0&amp;resMode=sharp&amp;op_usm=0.8,0.8,8,0&amp;iccEmbed=1" alt="spring furnishings sale" usemap="#rhbc417015">
+	<map name="rhbc417015">
+
+		<area alt="shop storage" coords="641,566,723,584" href="/catalog/category/collections.jsp?link=shopstorage&amp;categoryId=rhbc_cat431004">
+									<area alt="shop drapery" coords="451,566,529,584" href="/catalog/category/products.jsp?link=shopdrapery&amp;categoryId=rhbc_cat428032">
+									<area alt="shop decor" coords="552,566,619,584" href="/catalog/category/products.jsp?link=shopdecor&amp;categoryId=rhbc_cat428028">
+									<area alt="shop bath" coords="368,566,426,584" href="/catalog/category/products.jsp?link=shopbath&amp;categoryId=rhbc_cat428033">
+									<area alt="RH members program" coords="285,341,711,396" href="/membership.jsp?link=RHmembersprogram">
+									<area alt="shop bedding" coords="267,566,348,584" href="/catalog/category/products.jsp?link=shopbedding&amp;categoryId=rhbc_cat428027">
+									</map>
+</article><article class="cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 100; visibility: hidden; opacity: 0; display: block;">
+                <img src="https://media.rhbabyandchild.com/is/image/rhbcis/020817_bc_hp_slide2?wid=1000&amp;fmt=jpeg&amp;qlt=90,0&amp;op_sharpen=0&amp;resMode=sharp&amp;op_usm=0.8,0.8,8,0&amp;iccEmbed=1" alt="spring furnishings sale" usemap="#rhbc417014">
+	<map name="rhbc417014">
+
+		<area alt="shop bedding" coords="267,566,348,584" href="/catalog/category/products.jsp?link=shopbedding&amp;categoryId=rhbc_cat428027">
+									<area alt="shop storage" coords="641,566,723,584" href="/catalog/category/collections.jsp?link=shopstorage&amp;categoryId=rhbc_cat431004">
+									<area alt="shop drapery" coords="451,566,529,584" href="/catalog/category/products.jsp?link=shopdrapery&amp;categoryId=rhbc_cat428032">
+									<area alt="shop decor" coords="552,566,619,584" href="/catalog/category/products.jsp?link=shopdecor&amp;categoryId=rhbc_cat428028">
+									<area alt="shop bath" coords="368,566,426,584" href="/catalog/category/products.jsp?link=shopbath&amp;categoryId=rhbc_cat428033">
+									<area alt="RH members program" coords="285,341,711,396" href="/membership.jsp?link=RHmembersprogram">
+									</map>
+</article><article class="cycle-slide cycle-slide-active" style="position: absolute; top: 0px; left: 0px; z-index: 99; visibility: visible; opacity: 1; display: block;">
+                <img src="https://media.rhbabyandchild.com/is/image/rhbcis/020817_bc_hp_slide3?wid=1000&amp;fmt=jpeg&amp;qlt=90,0&amp;op_sharpen=0&amp;resMode=sharp&amp;op_usm=0.8,0.8,8,0&amp;iccEmbed=1" alt="spring furnishings event" usemap="#rhbc417013">
+	<map name="rhbc417013">
+
+		<area alt="shop storage" coords="641,566,723,584" href="/catalog/category/collections.jsp?link=shopstorage&amp;categoryId=rhbc_cat431004">
+									<area alt="shop drapery" coords="451,566,529,584" href="/catalog/category/products.jsp?link=shopdrapery&amp;categoryId=rhbc_cat428032">
+									<area alt="shop decor" coords="552,566,619,584" href="/catalog/category/products.jsp?link=shopdecor&amp;categoryId=rhbc_cat428028">
+									<area alt="shop bedding" coords="267,566,348,584" href="/catalog/category/products.jsp?link=shopbedding&amp;categoryId=rhbc_cat428027">
+									<area alt="shop bath" coords="368,566,426,584" href="/catalog/category/products.jsp?link=shopbath&amp;categoryId=rhbc_cat428033">
+									<area alt="RH members program" coords="285,341,711,396" href="/membership.jsp?link=RHmembersprogram">
+									</map>
+</article><article class="cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 97; visibility: hidden; opacity: 0; display: block;">
+                <img src="https://media.rhbabyandchild.com/is/image/rhbcis/020817_bc_hp_slide4?wid=1000&amp;fmt=jpeg&amp;qlt=90,0&amp;op_sharpen=0&amp;resMode=sharp&amp;op_usm=0.8,0.8,8,0&amp;iccEmbed=1" alt="spring furnishings event" usemap="#rhbc417016">
+	<map name="rhbc417016">
+
+		<area alt="shop storage" coords="641,566,723,584" href="/catalog/category/collections.jsp?link=shopstorage&amp;categoryId=rhbc_cat431004">
+									<area alt="RH members program" coords="285,341,711,396" href="/membership.jsp?link=RHmembersprogram">
+									<area alt="shop drapery" coords="451,566,529,584" href="/catalog/category/products.jsp?link=shopdrapery&amp;categoryId=rhbc_cat428032">
+									<area alt="shop decor" coords="552,566,619,584" href="/catalog/category/products.jsp?link=shopdecor&amp;categoryId=rhbc_cat428028">
+									<area alt="shop bedding" coords="267,566,348,584" href="/catalog/category/products.jsp?link=shopbedding&amp;categoryId=rhbc_cat428027">
+									<area alt="shop bath" coords="368,566,426,584" href="/catalog/category/products.jsp?link=shopbath&amp;categoryId=rhbc_cat428033">
+									</map>
+</article><article class="cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 96; visibility: hidden; opacity: 0; display: block;">
+                <img src="https://media.rhbabyandchild.com/is/image/rhbcis/020817_bc_hp_slide5?wid=1000&amp;fmt=jpeg&amp;qlt=90,0&amp;op_sharpen=0&amp;resMode=sharp&amp;op_usm=0.8,0.8,8,0&amp;iccEmbed=1" alt="spring furnishings event" usemap="#rhbc444000">
+	<map name="rhbc444000">
+
+		<area alt="shop drapery" coords="451,566,529,584" href="/catalog/category/products.jsp?link=shopdrapery&amp;categoryId=rhbc_cat428032">
+									<area alt="shop storage" coords="641,566,723,584" href="/catalog/category/collections.jsp?link=shopstorage&amp;categoryId=rhbc_cat431004">
+									<area alt="shop bedding" coords="267,566,348,584" href="/catalog/category/products.jsp?link=shopbedding&amp;categoryId=rhbc_cat428027">
+									<area alt="shop bath" coords="368,566,426,584" href="/catalog/category/products.jsp?link=shopbath&amp;categoryId=rhbc_cat428033">
+									<area alt="RH members program" coords="285,341,711,396" href="/membership.jsp?link=RHmembersprogram">
+									<area alt="shop decor" coords="552,566,619,584" href="/catalog/category/products.jsp?link=shopdecor&amp;categoryId=rhbc_cat428028">
+									</map>
+</article><article class="cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 95; visibility: hidden; opacity: 0; display: block;">
+                <img src="https://media.rhbabyandchild.com/is/image/rhbcis/020817_bc_hp_slide6?wid=1000&amp;fmt=jpeg&amp;qlt=90,0&amp;op_sharpen=0&amp;resMode=sharp&amp;op_usm=0.8,0.8,8,0&amp;iccEmbed=1" alt="spring furnishings event" usemap="#rhbc522000">
+	<map name="rhbc522000">
+
+		<area alt="shop drapery" coords="451,566,529,584" href="/catalog/category/products.jsp?link=shopdrapery&amp;categoryId=rhbc_cat428032">
+									<area alt="shop decor" coords="552,566,619,584" href="/catalog/category/products.jsp?link=shopdecor&amp;categoryId=rhbc_cat428028">
+									<area alt="shop bedding" coords="267,566,348,584" href="/catalog/category/products.jsp?link=shopbedding&amp;categoryId=rhbc_cat428027">
+									<area alt="shop bath" coords="368,566,426,584" href="/catalog/category/products.jsp?link=shopbath&amp;categoryId=rhbc_cat428033">
+									<area alt="shop storage" coords="641,566,723,584" href="/catalog/category/collections.jsp?link=shopstorage&amp;categoryId=rhbc_cat431004">
+									<area alt="RH members program" coords="285,341,711,396" href="/membership.jsp?link=RHmembersprogram">
+									</map>
+</article></div>
+            </div>
+        </div>
+					<div id="promo-rhbc430001" "="" class="promo-display " style="margin-top:20px;">
+					<!-- default link -->
+													<a href="/catalog/sale/index.jsp?sale=true&amp;link=winterclearancesale"><img src="https://media.rhbabyandchild.com/is/image/rhbcis/020817_bc_hp_wclearance?wid=1000&amp;fmt=jpeg&amp;qlt=90,0&amp;op_sharpen=0&amp;resMode=sharp&amp;op_usm=0.8,0.8,8,0&amp;iccEmbed=1" alt="winter clearance sale"></a></div>
+			<div id="promo-rhbc517004" "="" class="promo-display " style="margin-top:20px;">
+					<img src="https://media.rhbabyandchild.com/is/image/rhbcis/020817_bc_hp_rooms?wid=1000&amp;fmt=jpeg&amp;qlt=90,0&amp;op_sharpen=0&amp;resMode=sharp&amp;op_usm=0.8,0.8,8,0&amp;iccEmbed=1" alt="explore our collections" usemap="#rhbc517004">
+	<map name="rhbc517004">
+
+		<area alt="shop girl bedrooms" coords="65,0,487,424" href="/rooms/?slideId=rhbc513000-rhbc520016&amp;link=shopgirlbedrooms">
+									<area alt="shop nurseries" coords="517,38,937,460" href="/rooms/?slideId=rhbc352026-rhbc520044&amp;link=shopnurseries">
+									<area alt="shop boy bedrooms" coords="164,480,585,867" href="/rooms/?slideId=rhbc319002-rhbc520027&amp;link=shopboybedrooms">
+									</map>
+</div>
+			<div id="promo-rhbc517006" "="" class="promo-display " style="margin-top:20px;">
+					<!-- default link -->
+													<a href="/membership.jsp?link=IntroducingtheRHMembershipProgram"><img src="https://media.rhbabyandchild.com/is/image/rhbcis/020817_bc_hp_membership?wid=1000&amp;fmt=jpeg&amp;qlt=90,0&amp;op_sharpen=0&amp;resMode=sharp&amp;op_usm=0.8,0.8,8,0&amp;iccEmbed=1" alt="Introducing the RH Membership Program"></a></div>
+			<div id="promo-rhbc517005" "="" class="promo-display " style="margin-top:20px;">
+					<!-- default link -->
+													<a href="/catalog/category/products.jsp?link=freeshippingonallbedding&amp;categoryId=rhbc_cat428027"><img src="https://media.rhbabyandchild.com/is/image/rhbcis/020817_bc_hp_shipping?wid=1000&amp;fmt=jpeg&amp;qlt=90,0&amp;op_sharpen=0&amp;resMode=sharp&amp;op_usm=0.8,0.8,8,0&amp;iccEmbed=1" alt="free shipping on all bedding"></a></div>
+			<div id="promo-rhbc400016" "="" class="promo-display " style="margin-top:20px;">
+					<img src="https://media.rhbabyandchild.com/is/image/rhbcis/122416_bc_hp_source_book?wid=1000&amp;fmt=jpeg&amp;qlt=90,0&amp;op_sharpen=0&amp;resMode=sharp&amp;op_usm=0.8,0.8,8,0&amp;iccEmbed=1" alt="Receive News and Special Offers - Receive Our Catalog and Emails" usemap="#rhbc400016">
+	<map name="rhbc400016">
+
+		<area alt="explore the source book" coords="713,18,922,316" href="//catalogs.restorationhardware.com/rhbabyandchild/?bookcode=bcn&amp;link=explorethesourcebook">
+									<area alt="shop RH Teen" coords="821,451,927,467" href="https://www.rhteen.com/?link=shopRHTeen" target="_blank">
+									<area alt="request a source book" coords="739,426,927,441" href="/customer-service/catalog-request.jsp?&amp;link=requestasourcebook">
+									<area alt="explore the RH Teen source book" coords="722,399,928,415" href="//catalogs.restorationhardware.com/rhteen?link=exploretheRHTeensourcebook" target="_blank">
+									<area alt="Request a source book" coords="75,222,268,239" href="/customer-service/catalog-request.jsp?&amp;link=Requestasourcebook">
+									<area alt="Explore our source book" coords="442,18,657,316" href="//catalogs.restorationhardware.com/rhbabyandchild/?bookcode=bcf&amp;link=Exploreoursourcebook" target="_blank">
+									<area alt="download the app" coords="78,248,233,264" href="https://itunes.apple.com/us/app/restoration-hardware-baby/id543642567?mt=8&amp;link=downloadtheapp" target="_blank">
+									</map>
+</div>
+			<div id="promo-rhbc400018" "="" class="promo-display " style="margin-top:40px;">
+					<!-- default link -->
+													<a href="/customer-service/email-signup.jsp?&amp;link=ReceiveEmailExclusives&amp;link=SubscribetoOurEmailList"><img src="https://media.rhbabyandchild.com/is/image/rhbcis/082416_bc_hp_email2?wid=1000&amp;fmt=jpeg&amp;qlt=90,0&amp;op_sharpen=0&amp;resMode=sharp&amp;op_usm=0.8,0.8,8,0&amp;iccEmbed=1" alt="Subscribe to Our Email List"></a></div>
+			<div id="promo-rhbc517007" "="" class="promo-display " style="margin-top:40px;">
+					<img src="https://media.rhbabyandchild.com/is/image/rhbcis/082416_bc_hp_atelier?wid=1000&amp;fmt=jpeg&amp;qlt=90,0&amp;op_sharpen=0&amp;resMode=sharp&amp;op_usm=0.8,0.8,8,0&amp;iccEmbed=1" alt="Introducing RH Interior Design Atelier" usemap="#rhbc517007">
+	<map name="rhbc517007">
+
+		<area alt="Visit Our Houston Gallery" coords="767,535,863,553" href="/content/promo.jsp?id=rhbc328022&amp;link=VisitOurHoustonGallery">
+									<area alt="Visit Our Boston Gallery" coords="767,505,861,522" href="/store-locations/store.jsp?storeId=142&amp;link=VisitOurBostonGallery">
+									<area alt="Visit Our Chicago Gallery" coords="767,476,858,492" href="/store-locations/store.jsp?storeId=147&amp;link=VisitOurChicagoGallery">
+									<area alt="Visit Our Atlanta Gallery" coords="767,446,862,463" href="/content/promo.jsp?id=rhbc421000&amp;link=VisitOurAtlantaGallery">
+									<area alt="Visit Our West Palm Beach Gallery" coords="767,416,919,432" href="/store-locations/store.jsp?storeId=306&amp;link=VisitOurWestPalmBeachGallery">
+									<area alt="Visit Our Tampa Gallery" coords="655,535,730,553" href="/store-locations/store.jsp?storeId=148&amp;link=VisitOurTampaGallery">
+									<area alt="Visit Our Greenwich Gallery" coords="619,505,730,522" href="/store-locations/store.jsp?storeId=304&amp;link=VisitOurGreenwichGallery">
+									<area alt="Visit Our Denver Gallery" coords="641,476,730,492" href="/store-locations/store.jsp?storeId=151&amp;link=ReadOurBenefitsPage">
+									<area alt="Visit Our Santa Monica Gallery" coords="598,446,730,463" href="/content/promo.jsp?id=rhbc348000&amp;link=VisitOurSantaMonicaGallery">
+									<area alt="Visit Our Corte Madera Gallery" coords="595,416,730,432" href="/content/promo.jsp?id=rhbc218006&amp;link=VisitOurCorteMaderaGallery">
+									</map>
+</div>
+			<div id="promo-rhbc400020" "="" class="promo-display " style="margin-top:20px;">
+					<img src="https://media.rhbabyandchild.com/is/image/rhbcis/110816_bc_hp_registry?wid=1000&amp;fmt=jpeg&amp;qlt=90,0&amp;op_sharpen=0&amp;resMode=sharp&amp;op_usm=0.8,0.8,8,0&amp;iccEmbed=1" alt="Our Values" usemap="#rhbc400020">
+	<map name="rhbc400020">
+
+		<area alt="create your registry" coords="0,0,495,279" href="/gift-registry/index.jsp?link=createyourregistry&amp;categoryId=rhbc_cat105011">
+									<area alt="Our Beliefs" coords="502,0,1000,279" href="//images.rhbabyandchild.com/bc/content/customer-service/GREENGUARD_Gold_Certified_Furniture.pdf?link=GreenguardGoldcertifiedfurniture">
+									</map>
+</div>
+			<div id="promo-rhbc400024" "="" class="promo-display " style="margin-top:20px;">
+					<!-- new-window link -->
+													<a href="https://www.pinterest.com/rhbabyandchild/?link=BabyAndChildisNowonPinterest" target="_blank"><img src="https://media.rhbabyandchild.com/is/image/rhbcis/082714_bc_hp_pinterest?wid=1000&amp;fmt=jpeg&amp;qlt=90,0&amp;op_sharpen=0&amp;resMode=sharp&amp;op_usm=0.8,0.8,8,0&amp;iccEmbed=1" alt="Baby &amp; Child is Now on Pinterest"></a>
+												</div>
+			</div>
+	</div>
+</div>
+
