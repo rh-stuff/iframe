@@ -1,16 +1,20 @@
 <!doctype html>
 <html>
-   <head>
-        <script src="https://use.typekit.net/uib4udz.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <head>
+        <script src="https://use.typekit.net/uib4udz.js">
+        	</script>
+		<script>try{Typekit.load({ async: true });}catch(e){}
+			</script>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Customer Service</title>
-        <style>
+        <title>Customer Service
+        	</title>
+    <style>
         body {
-            font-family:minion-pro;
+            font-family:proxima-nova;
             margin: 0;
             padding: 0;
+            text-align: justify;
         }
         .wrap {
             width: 1000px;
@@ -20,39 +24,27 @@
             float: left;
             width: 184px;
         }
-        .content {
+  		.content {
             width: 1000px;
             float: left;
+            font: 12px/18px "proxima-nova", "open-sans", Arial, Helvetica, sans-serif;
         }
-        iframe {
-            width: 100%;
-            height: 1000px;
-        }
-<style>
-.cws-v2 .oracletaleocwsv2-main-nav {
-  background-color: transparent !important;
-}
-.oracletaleocwsv2-main-nav {
-  margin-top: 0 !important;
-}
-h2 {
-  font-size: 14px !important;
-  color: #666 !important;
-  font-family:verdana,geneva,sans-serif;
-}
-h4 {
-  font-size: 14px !important;
-  color: #666 !important;
-}
-@media (min-width: 768px) {
-  .cws-v2 .oracletaleocwsv2-accordion-expandable .oracletaleocwsv2-accordion-head {
-    width: 75% !important;
-  }
-  .cws-v2 .oracletaleocwsv2-accordion-expandable .oracletaleocwsv2-accordion-content {
-    width: 25% !important;
-  }
-}
-.header {
+        .ul {
+            list-style-position: outside;
+        }  
+        .container span {
+            font: 12px "proxima-nova", "open-sans", Arial, Helvetica, sans-serif;
+	    	display: inline-block;
+		}
+        p.footer {
+            font: 9px "proxima-nova", "open-sans", Arial, Helvetica, sans-serif;
+	    	color: #6f6d70
+	    	text-align: center;			    
+            letter-spacing: 0.2em;    
+            padding-bottom: 10px;
+            margin-top: 64px;
+         }   
+		.header {
             position: relative;
             height: 52px;
             border-bottom: 1px solid #CCC;
@@ -72,7 +64,8 @@ h4 {
             background-size: 46px 26px;
         }
         .uber-nav-wrapper {
-            display: inline-block;            position: relative;
+            display: inline-block;
+            position: relative;
             top: 13px;
             left: 43px;
         }
@@ -88,7 +81,6 @@ h4 {
             list-style: none;
             margin: 0;
             padding: 0;
-
         }
         .uber-nav__brand {
             display: inline-block;
@@ -104,43 +96,150 @@ h4 {
             text-transform: uppercase;
         }
         .uber-nav__brand a:hover {
-            color: black;
+            color: black; 
         }
-
+		.top-level-subnav-border {
+       		border-bottom: none;
+       		margin-bottom: 20px;
+   		}
+    	.top-level-subnav {
+       		height: 30px;
+       		margin: 0 auto;
+       		position: relative;
+       		vertical-align: middle;
+       		width: 1000px;
+       		display: -webkit-box;
+       		display: -moz-box;
+       		display: -ms-flexbox;
+       		display: -webkit-flex;
+       		display: flex;
+       		-webkit-justify-content: space-between;
+       		-ms-flex-pack: justify;
+       		justify-content: space-between;
+       		list-style: none;
+       		padding: 0;
+    	}
+    	.trigger-subnav-category:first-child {
+        	margin-left: 0;
+    	}
+    	.top-level-subnav > li {
+        	position: relative;
+        	cursor: pointer;
+        	border-left: 1px solid transparent;
+        	border-right: 1px solid transparent;
+        	letter-spacing: 0.15em;
+    	}
+    	.shop-nav {
+        	z-index: 105;
+        	background: transparent;
+    	}
+    	.shop-nav .subnav-category-text {
+        	margin: 0 1.3em 0 0;
+    	}
+    	.subnav-category-text, .subnav-category-text a {
+        	color: black;
+        	font: 10px/18px "proxima-nova", "open-sans", Arial, Helvetica, sans-serif;
+        	line-height: 30px;
+        	position: relative;
+        	text-transform: uppercase;
+        	white-space: nowrap;
+        	text-decoration: none;
+    	}
+    	.subnav-category-underline {
+       		background-color: black;
+       		display: none;
+       		height: 1px;
+       		position: absolute;
+       		top: 23px;
+       		width: 100%;
+       		z-index: 1002;
+    	}
+    	.subnav-category-text:hover .subnav-category-underline {
+        	display: block;
+    	}       
 </style>
+</head>
  <div id="header" class="header">
-            <a href="http://www.rh.com" class="logo" alt="RH"></a>
-            <div class="uber-nav-wrapper">
-                <nav id="uber-nav">
-                    <ul>
-                        <li class="uber-nav__brand"><a href="https://rh-stuff.github.io/iframe/OurTeams.html">Our Teams</a></li>
-                        <li class="uber-nav__brand"><a href="https://rh-stuff.github.io/iframe/OurHistory.html">Our History</a></li>
-                        <li class="uber-nav__brand"><a href="https://rh-stuff.github.io/iframe/OurValuesandBeliefs.html">Our Values & Beliefs</a></li>
-                        <li class="uber-nav__brand"><a href="https://rh-stuff.github.io/iframe/Benefits.html">Our Benefits</a></li>
-                        <li class="uber-nav__brand"><a href="https://chm.tbe.taleo.net/dispatcher/servlet/DispatcherServlet?org=RESTORATIONHARDWARE&act=redirectCwsV2&cws=42">Opportunities For Current Associates</a></li>
-                    </ul>
-                </nav></div>        </div>
-    <body>
-        <div class="wrap">
-    
-            <div class="content-wrap">
-                <div class="sidebar">
+    <a href="http://www.rh.com" class="logo" alt="RH"></a>
+        <div class="uber-nav-wrapper">
+            <nav id="uber-nav">
+                <ul>
+                    <li class="uber-nav__brand"><a href="https://rh-stuff.github.io/iframe/OurTeams.html"><b>Our Teams</b></a></li>
+                    <li class="uber-nav__brand"><a href="https://rh-stuff.github.io/iframe/OurHistory.html">Our History</a></li>
+                    <li class="uber-nav__brand"><a href="https://rh-stuff.github.io/iframe/OurValuesandBeliefs.html">Our Values & Beliefs</a></li>
+                    <li class="uber-nav__brand"><a href="https://rh-stuff.github.io/iframe/Benefits.html">Our Benefits</a></li>
+                    <li class="uber-nav__brand"><a href="https://chm.tbe.taleo.net/dispatcher/servlet/DispatcherServlet?org=RESTORATIONHARDWARE&act=redirectCwsV2&cws=42">For Current Associates</a></li>
+                </ul>
+            </nav>	
+        </div>        
+	</div>
+<body>
+ <nav class="main-navigation top-level-subnav-border ">
+        <ul class="top-level-subnav shop-nav">
+            <li class="trigger-subnav-category trigger-subnav-category-float">
+                <div class="subnav-category-text" style="">
+                    <div class="subnav-category-underline"></div>
+                    <a href="https://rh-stuff.github.io/iframe/Corporate.html">Corporate</a>
                 </div>
-                <div class="content">
-<img src="images/Placeholder Header.png" width="1000">  </div>
-               <div class="content">
-<img src="images/banner_psystems.jpg" width="1000">  </div>
-               <div class="content">
-<img src="images/Sample1.jpg" width="330" height="330"> <img src="images/Sample2.jpg" width="330" height="330"> <img src="images/Sample4.jpg" width="330" height="330">  </div>
+            </li>
+
+            <li class="trigger-subnav-category trigger-subnav-category-float">
+                <div class="subnav-category-text" style="">
+                    <div class="subnav-category-underline"></div>
+                    <a href="https://rh-stuff.github.io/iframe/Retail.html">Retail</a>
+                </div>
+            </li>
+            <li class="trigger-subnav-category trigger-subnav-category-float">
+                <div class="subnav-category-text" style="">
+                    <div class="subnav-category-underline"></div>
+                    <a href="https://rh-stuff.github.io/iframe/Hospitality.html">Hospitality</a>
+                </div>
+            </li>
+            <li class="trigger-subnav-category trigger-subnav-category-float">
+                <div class="subnav-category-text" style="">
+                    <div class="subnav-category-underline"></div>
+                    <a href="https://rh-stuff.github.io/iframe/InteriorDesign.html">Interior Design</a>
+                </div>
+            </li>
+            <li class="trigger-subnav-category trigger-subnav-category-float">
+                <div class="subnav-category-text" style="">
+                    <div class="subnav-category-underline"></div>
+                    <a href="https://rh-stuff.github.io/iframe/CustomerService.html"><u>Customer Service</u></a>
+                </div>
+            </li>
+            <li class="trigger-subnav-category trigger-subnav-category-float">
+                <div class="subnav-category-text" style="">
+                    <div class="subnav-category-underline"></div>
+                    <a href="https://rh-stuff.github.io/iframe/HomeDelivery.html">Delivery & Distribution</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="wrap">
+        <div class="content-wrap">
+            <div class="sidebar">
             </div>
-           
-                <div class="content">
-<img src="images/Sample3.jpg" width="1000">  </div>
-     <div class="content">  
-                     <p>Ensuring the ultimate customer experience through design consultation is our mission at our Customer Service Centers across the US.</p> </div>
-           <div style="text-align:center"><img src="images/Elevate.png"> </div>
-             <div style="text-align:center"> <a href="https://chj.tbe.taleo.net/chj06/ats/careers/v2/jobSearch?act=redirectCwsV2&cws=37&org=STG_RESTORATIONHARDWARE"> <img src="images/View.png"></a>
-              <img src="images/footercopyright.png" width="1000"> </div>
+            <div class="content">
+					<img src="images/TracyCSC.jpg">
+                    <p>We put the customer at the center of everything we do. Our Customer Service teams are Design Consultants who are empowered to own the complete customer experience. You will work alongside others who are motivated by a passion for service and who leverage strong interpersonal skills to remove obstacles and delight our customers.</p>
+					      <img src="images/clock1.jpg" width="330">  
+                    <img src="images/Clock2.jpg" width="330">
+                    <img src="images/Clock3.jpg" width="330"> 	
+					      <b>SCHEDULING FLEXIBILITY</b>
+					      <p>As a Customer Service Center associate, you will have access to a flexible work schedule.</p>
+					      <b>TRAINING & DEVELOPMENT</b>
+					      <p>We will equip you with comprehensive product knowledge, including access to a materials library. </p>
+					      <img src="images/MaterialsLibrary1.jpg" width="330">  
+                    <img src="images/MaterialsLibrary2.jpg" width="330">
+                    <img src="images/MaterialsLibrary3.jpg" width="330">  
+					<br>
+					<br>		          
+    			<div style="text-align:center">
+                  	<p><a href="https://chj.tbe.taleo.net/chj06/ats/careers/v2/jobSearch?act=redirectCwsV2&cws=37&org=STG_RESTORATIONHARDWARE">We invite you to consider becoming part of our team.</a></p>
+            	    <p class="footer">© 2017 RH</p>
+				</div>
+		   </div>	
         </div>
-    </body>
-</html>
+    </div>
+ </body>
+ </html>
