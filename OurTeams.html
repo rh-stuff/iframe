@@ -166,7 +166,37 @@
     	}
     	.subnav-category-text:hover .subnav-category-underline {
         	display: block;
-    	}       
+    	} 
+        .utility {
+           display: inline-block;
+           position: absolute;
+           right: -12px;
+           top: 14px;
+       }
+       .group {
+           height: auto;
+       }
+       #header-utils {
+           color: black;
+           font: 10px/18px "proxima-nova", "open-sans", Arial, Helvetica, sans-serif;
+           text-transform: none;
+           text-align: right;
+       }
+       .commerce-utils > li {
+           display: inline-block;
+           line-height: 100%;
+           padding: 6px 12px;
+           text-align: left;
+           text-transform: uppercase;
+           vertical-align: top;
+           zoom: 1;
+           letter-spacing: 0;
+       }
+       #header-utils a {
+           text-decoration: none;
+           color: black;
+           letter-spacing: 0.1em;
+        }	    
 </style>
 </head>
  <div id="header" class="header">
@@ -182,7 +212,14 @@
                 </ul>
             </nav>	
         </div>        
-	</div>
+</div>  
+         <div class="utility noprint group  dark-bar">
+             <div class="utility-commerce group">
+                 <ul id="header-utils" class="group commerce-utils">
+                     <li><a href="https://chm.tbe.taleo.net/dispatcher/servlet/DispatcherServlet?org=RESTORATIONHARDWARE&act=redirectCwsV2&cws=42">For Current Associates</a></li>
+                 </ul>
+             </div>
+         </div>   
 <body>
     <div class="wrap">
         <div class="content-wrap">
