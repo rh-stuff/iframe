@@ -37,6 +37,19 @@
 	    	display: inline-block;
 		text-align: center;
 		}
+    	}
+    	.span-underline {
+       		background-color: black;
+       		display: none;
+       		height: 1px;
+       		position: absolute;
+       		top: 23px;
+       		width: 100%;
+       		z-index: 1002;
+    	}
+    	.span-text:hover .span-underline {
+        	display: block;
+    	} 	    
         p.footer {
             font: 9px "proxima-nova", "open-sans", Arial, Helvetica, sans-serif;
 	    	color: #6f6d70
@@ -185,11 +198,14 @@
                      <a href="https://rh-stuff.github.io/iframe/Hospitality.html"> <img src="images/hospitalitytile.jpeg" width="330" height="330" style="display: inline;"></a> 
 	    </div>
 	    <div class="container">
-  		      <span style="width:330px">CORPORATE
+		    <div class="span-text" style="">
+                    <div class="span-category-underline"></div>
+  		      <span style="width:330px"><a href="https://rh-stuff.github.io/iframe/Corporate.html">CORPORATE</a>
+			    </span></div></div>
+       	 <div class="container">
+		     <span style="width:330px"><a href="https://rh-stuff.github.io/iframe/Retail.html">RETAIL</a>
   		      </span>
-       		      <span style="width:330px">RETAIL
-  		      </span>
-		      <span style="width:330px">HOSPITALITY
+		      <span style="width:330px"><a href="https://rh-stuff.github.io/iframe/Hospitality.html">HOSPITALITY</a>
   		      </span>
             </div>    
             <div class="content">
@@ -199,18 +215,20 @@
                     <a href="https://rh-stuff.github.io/iframe/HomeDelivery.html"> <img src="images/deliverytile.jpeg" width="330" height="330" style="display: inline;"></a>
 	    </div>  
 	   <div class="container">
-  		     <span style="width:330px">INTERIOR DESIGN
+  		     <span style="width:330px"><a href="https://rh-stuff.github.io/iframe/InteriorDesign.html">INTERIOR DESIGN</a>
   		     </span>
-       		     <span style="width:330px">CUSTOMER SERVICE
+       		     <span style="width:330px"><a href="https://rh-stuff.github.io/iframe/CustomerService.html">CUSTOMER SERVICE</a>
   		     </span>
-		     <span style="width:330px">DELIVERY & DISTRIBUTION
+		     <span style="width:330px"><a href="https://rh-stuff.github.io/iframe/HomeDelivery.html">DELIVERY & DISTRIBUTION</a>
   		     </span>
             </div> 
 		    <br><br>		          
-    	    <div style="text-align:center">
+    	    <div class="content">
+		 <div style="text-align:center">
                	    <p><a href="https://chj.tbe.taleo.net/chj06/ats/careers/v2/jobSearch?act=redirectCwsV2&cws=37&org=STG_RESTORATIONHARDWARE">We invite you to consider becoming part of our team.</a></p>
             	    <p class="footer">© 2017 RH</p>
-	    </div>
+	         </div>
+	   </div>
         </div>	
     </div>
  </body>
