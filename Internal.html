@@ -58,7 +58,7 @@
 	    	text-align: center;	
             letter-spacing: 0.2em;    
             padding-bottom: 10px;
-            margin-top: 400px;
+            margin-top: 300px;
          } 
         p.footer a {
             font: 9px "proxima-nova", "open-sans", Arial, Helvetica, sans-serif;
@@ -211,6 +211,66 @@
       #header-utils a:hover {
             color: black; 
         }
+
+        form {
+            display: block;
+            margin-top: 0em;
+        }
+        fieldset {
+            display: block;
+            border-width: 0;
+            margin: 0 0 1em 0;
+            padding: 0;
+        }
+        label {
+            display: block;
+        }
+        input {
+            -webkit-appearance: none;
+            height: 2em;
+            background: #fff;
+            font: 12px/18px "proxima-nova", "open-sans", Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            border: 1px solid #999;
+            color: #000;
+            padding: 3px;
+            height: 2em;
+        }
+        input[type="submit"].button--primary:hover, .button--primary:hover {
+            background-color: #666;
+        }
+        input[type="submit"].button--primary, .button--primary {
+            background-color: black;
+            border-color: black;
+            padding: 0 20px;
+            border-style: solid;
+            border-radius: 0;
+            -webkit-border-radius: 0;
+            border-width: 0;
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+            display: inline-block;
+            font: 11px "proxima-nova", "open-sans", Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            height: 2.5em;
+            letter-spacing: 0.15em;
+            line-height: normal;
+            margin: 0;
+            min-height: 32px;
+            text-transform: uppercase;
+            text-decoration: none;
+            vertical-align: middle;
+            -webkit-appearance: none;
+            -o-transition: .4s ease-in;
+            -ms-transition: .4s ease-in;
+            -moz-transition: .4s ease-in;
+            -webkit-transition: .4s ease-in;
+            transition: .4s ease-in;
+        }
+        input[type="submit"] {
+            height: auto;
+        }	    
 </style>
 </head>
  <div id="header" class="header">
@@ -240,11 +300,29 @@
             <div class="sidebar">
             </div>
             <div class="content">
-           	<div style="text-align:center">
+		    <div style="text-align:center">
  			<br>
 			<ul>
                         <li class="uber-nav__brand"><a href="https://chj.tbe.taleo.net/chj06/ats/careers/v2/jobSearch?act=redirectCwsV2&cws=46&org=STG_RESTORATIONHARDWARE"><b>ENTER YOUR ASSOCIATE ID NUMBER</b></a></li>
 			</ul>
+                       		<form method="get" action="https://chj.tbe.taleo.net/chj06/ats/careers/v2/jobSearch">
+                    <input type="hidden" name="act" value="redirectCwsV2" />
+                    <input type="hidden" name="cws" value="46" />
+                    <input type="hidden" name="org" value="STG_RESTORATIONHARDWARE" />
+
+                    <fieldset>
+                        <label for="email">RH Email Address</label>
+                        <input size="35" autocomplete="off" maxlength="40" id="email">
+                    </fieldset>
+                    <fieldset>
+                        <label for="number">Associate ID Number</label>
+                        <input size="35" autocomplete="off" maxlength="8" id="number">
+                    </fieldset>
+
+                    <fieldset>
+                        <input type="submit" class="button--primary">
+                    </fieldset>
+                		</form>
 			<p class="footer"><a href="https://restorationhardware.com">© 2017 RH</a></p>
 		 </div>					  
 	   </div>
