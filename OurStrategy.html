@@ -209,6 +209,9 @@
             color: #999;
             letter-spacing: 0.1em;
         }
+	    .slideshow {position: relative; width: 1000px; overflow: hidden;}
+.slide { display: none; position: absolute;}
+.slide.current { display: block; }
 </style>
 </head>
  <div id="header" class="header">
@@ -238,12 +241,15 @@
             <div class="sidebar">
             </div>
             <div class="content">
-		    	<img src="images/eurekabandw2.jpg" width="490" style="display: inline;">
-                	<img src="images/storefront.jpg" width="490"style="display: inline;">
-            </div>
+		    <div class="slideshow">
+    <img src="images/eurekabandw2.jpg" class="slide current">
+    <img src="images/storefront.jpg" class="slide">
+    <img src="images/Guesthouse.jpg" class="slide">
+  </div>
+		    	
  			
 		         <div class="container">
-				 <span style="width:1000px">2017 continued disruption in the hospitality industry with first RH Guesthouse opening in Manhattan’s Meatpacking District and 6 new restaurants</span>
+				 <span style="width:1000px">Inspiration language re: continued disruption in the hospitality industry with first RH Guesthouse opening in Manhattan’s Meatpacking District and 6 new restaurants</span>
 			 </div>
 			 <div class="content">
 			     <div style="text-align:center">
